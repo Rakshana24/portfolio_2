@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace;
+  
+  --color-bg-dark: #070709;
+  --color-sidebar-dark: #0b0b0e;
+  --color-card-dark: #111115;
+  --color-border-dark: #1c1c22;
+  --color-border-focus: #373742;
+  --color-accent-blue: #3b82f6;
+  --color-accent-teal: #14b8a6;
+  --color-accent-purple: #8b5cf6;
+  --color-text-primary: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #52525b;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-dark);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-focus);
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Linear & Vercel Style Grid/Dot Pattern Background */
+.grid-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle Spotlight Glow Utilities */
+.spotlight-blue {
+  background: radial-gradient(circle 400px at 50% 0px, rgba(59, 130, 246, 0.08), transparent 80%);
+}
+
+.spotlight-purple {
+  background: radial-gradient(circle 350px at 100% 100%, rgba(139, 92, 246, 0.04), transparent 80%);
+}
+
+/* Glassmorphism Surface Base */
+.glass-panel {
+  background: rgba(17, 17, 21, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(28, 28, 34, 0.6);
+}
+
+/* Glow Card Borders */
+.glow-card {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.glow-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px rgba(59, 130, 246, 0.1);
+  background: rgba(19, 19, 25, 0.7);
+}
+
+.glow-card:hover::before {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.35), rgba(20, 184, 166, 0.15));
+}
+
+/* Animations */
+@keyframes cursor-blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.terminal-cursor {
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.05); opacity: 0.5; }
+}
+
+.pulse-ambient {
+  animation: pulse-glow 10s infinite ease-in-out;
+}
+
+/* Timeline Vertical Line */
+.timeline-line {
+  position: absolute;
+  left: 17px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-border-dark) 0%, rgba(59, 130, 246, 0.3) 30%, rgba(20, 184, 166, 0.3) 70%, var(--color-border-dark) 100%);
+}
+
+/* Code Syntax Highlighting Helper Tokens */
+.code-keyword { color: #f43f5e; font-weight: 500; }
+.code-string { color: #10b981; }
+.code-number { color: #f59e0b; }
+.code-comment { color: #71717a; font-style: italic; }
+.code-boolean { color: #3b82f6; }
+.code-key { color: #818cf8; font-weight: 500; }
+.code-tag { color: #ec4899; }
+.code-builtin { color: #a855f7; }
+
+.window-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.window-dot-red { background-color: #ef4444; }
+.window-dot-yellow { background-color: #f59e0b; }
+.window-dot-green { background-color: #10b981; }
