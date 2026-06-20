@@ -25,7 +25,7 @@ To leverage my engineering skills in a dynamic, forward-thinking organization to
 ---
 
 ## Education
-* **M.S. in Computer Science** — Tech Institute of Technology (2022 - 2024)
+* **M.S. in Computer Science** — Tech Institute of Technology (2024 - 2028)
   * *Focus:* Distributed Systems, Artificial Intelligence, Advanced Software Design.
 * **B.S. in Computer Science & Engineering** — Apex State University (2018 - 2022)
   * *Honors:* Magna Cum Laude, President's Merit Scholar.
