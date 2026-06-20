@@ -233,7 +233,7 @@ export const AboutDashboard: React.FC = () => {
               </span>
               
               <div className="flex items-center justify-between text-xs font-mono">
-                <span className="px-2 py-0.5 bg-accent-blue/15 text-accent-blue border border-accent-blue/20 rounded-md">2022 &mdash; Present</span>
+                <span className="px-2 py-0.5 bg-accent-blue/15 text-accent-blue border border-accent-blue/20 rounded-md">2024 &mdash; 2028</span>
                 <span className="text-text-muted">B.Tech</span>
               </div>
               
