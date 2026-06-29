@@ -86,48 +86,6 @@ tooling_workflows:
       path: '/projects',
       children: [
         {
-          name: 'forestmind.md',
-          type: 'file',
-          extension: 'md',
-          path: '/projects/forestmind.md',
-          content: `# ForestMind 🌲
-
-> AI-Powered Distributed Forest Monitoring & Protection System
-
----
-
-### Project Overview
-ForestMind is an intelligent forest surveillance platform that combines Edge AI, Computer Vision, Audio Intelligence, and Offline Mesh Networking to detect threats such as human intrusion, illegal logging, gunshots, forest fires, vehicles, and endangered species activity in real time. Built for remote forest environments with no internet connectivity, the system deploys Jetson Nano-powered monitoring nodes equipped with cameras, microphones, and wireless communication modules. Detected events are processed locally using YOLOv8-based vision models and CNN-based audio classification models, then transmitted through a self-healing mesh network using Dijkstra’s shortest-path routing algorithm to reach the nearest forest office. Forest officers receive live alerts, captured images, and location data through a centralized dashboard, enabling rapid response and proactive conservation efforts.
-
----
-
-### Tech Stack
-- **Frontend:** React, Vite, React Router, Context API
-- **Backend:** Node.js, Express.js, REST APIs
-- **Database:** MongoDB Atlas, Mongoose
-- **AI/ML:** YOLOv8, OpenCV, CNN Audio Classification, Edge AI
-- **Hardware:** Jetson Nano, USB Camera, Microphone, Wireless Antenna Modules
-- **Networking:** Mesh Communication Network, Dijkstra Routing
-- **Deployment:** Local Edge Nodes + Central Monitoring Dashboard
-
----
-
-### Key Features
-1. **Real-Time Human & Vehicle Detection:** Employs YOLOv8 computer vision at local edge nodes to log visual threats in real time.
-2. **Chainsaw, Gunshot & Distress Sound Recognition:** Identifies chainsaw noises, gunshots, and distress sounds using CNN-based audio classification models.
-3. **Offline Mesh-Based Alert Transmission:** Transmits alerts through a self-healing mesh network using Dijkstra’s shortest-path routing algorithm to reach the nearest forest office.
-4. **Geo-Fencing & Restricted Zone Monitoring:** Configures virtual boundaries and warns rangers when intruders breach lines.
-5. **Endangered Species Identification & Tracking:** Recognizes and tracks native endangered fauna to log population trends and migration activity.
-6. **Live Forest Office Alert Dashboard:** Displays active maps, live alerts, captured threat images, and location data for forest officers.
-7. **Environmental Insights & Forest Well-Being Recommendations:** Generates forest health insights and actionable recommendations from analytical models.
-
----
-
-### GitHub Link
-[View Repository on GitHub](https://github.com/Rakshana24/ForestMind)
-`
-        },
-        {
           name: 'apiforge.md',
           type: 'file',
           extension: 'md',
@@ -267,6 +225,48 @@ The system integrates role-based access control, real-time booking management, c
 
 ### GitHub Link
 [View Repository on GitHub](https://github.com/Rakshana24/VenueBooking)
+`
+        },
+        {
+          name: 'forestmind.md',
+          type: 'file',
+          extension: 'md',
+          path: '/projects/forestmind.md',
+          content: `# ForestMind 🌲
+
+> AI-Powered Distributed Forest Monitoring & Protection System
+
+---
+
+### Project Overview
+ForestMind is an intelligent forest surveillance platform that combines Edge AI, Computer Vision, Audio Intelligence, and Offline Mesh Networking to detect threats such as human intrusion, illegal logging, gunshots, forest fires, vehicles, and endangered species activity in real time. Built for remote forest environments with no internet connectivity, the system deploys Jetson Nano-powered monitoring nodes equipped with cameras, microphones, and wireless communication modules. Detected events are processed locally using YOLOv8-based vision models and CNN-based audio classification models, then transmitted through a self-healing mesh network using Dijkstra’s shortest-path routing algorithm to reach the nearest forest office. Forest officers receive live alerts, captured images, and location data through a centralized dashboard, enabling rapid response and proactive conservation efforts.
+
+---
+
+### Tech Stack
+- **Frontend:** React, Vite, React Router, Context API
+- **Backend:** Node.js, Express.js, REST APIs
+- **Database:** MongoDB Atlas, Mongoose
+- **AI/ML:** YOLOv8, OpenCV, CNN Audio Classification, Edge AI
+- **Hardware:** Jetson Nano, USB Camera, Microphone, Wireless Antenna Modules
+- **Networking:** Mesh Communication Network, Dijkstra Routing
+- **Deployment:** Local Edge Nodes + Central Monitoring Dashboard
+
+---
+
+### Key Features
+1. **Real-Time Human & Vehicle Detection:** Employs YOLOv8 computer vision at local edge nodes to log visual threats in real time.
+2. **Chainsaw, Gunshot & Distress Sound Recognition:** Identifies chainsaw noises, gunshots, and distress sounds using CNN-based audio classification models.
+3. **Offline Mesh-Based Alert Transmission:** Transmits alerts through a self-healing mesh network using Dijkstra’s shortest-path routing algorithm to reach the nearest forest office.
+4. **Geo-Fencing & Restricted Zone Monitoring:** Configures virtual boundaries and warns rangers when intruders breach lines.
+5. **Endangered Species Identification & Tracking:** Recognizes and tracks native endangered fauna to log population trends and migration activity.
+6. **Live Forest Office Alert Dashboard:** Displays active maps, live alerts, captured threat images, and location data for forest officers.
+7. **Environmental Insights & Forest Well-Being Recommendations:** Generates forest health insights and actionable recommendations from analytical models.
+
+---
+
+### GitHub Link
+[View Repository on GitHub](https://github.com/Rakshana24/ForestMind)
 `
         }
       ]

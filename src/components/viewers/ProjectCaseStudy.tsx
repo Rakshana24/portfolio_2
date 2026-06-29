@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Layers, 
+import {
+  Layers,
   ArrowRight
 } from 'lucide-react';
+import { CustomVideoPlayer } from './CustomVideoPlayer';
 
 interface ProjectCaseStudyProps {
   projectName: string;
@@ -19,17 +20,17 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
           tagline: 'AI-Powered Autonomous Backend Generation & Self-Healing API Development Platform',
           status: 'Active',
           techStack: [
-            'FastAPI', 
-            'Python', 
-            'SQLAlchemy', 
-            'SQLite', 
-            'Pydantic', 
-            'Groq API', 
-            'LLMs', 
-            'Multi-Agent AI', 
-            'Pytest', 
-            'FastAPI TestClient', 
-            'AST Parsing', 
+            'FastAPI',
+            'Python',
+            'SQLAlchemy',
+            'SQLite',
+            'Pydantic',
+            'Groq API',
+            'LLMs',
+            'Multi-Agent AI',
+            'Pytest',
+            'FastAPI TestClient',
+            'AST Parsing',
             'Static Code Validation'
           ],
           metrics: [
@@ -58,7 +59,8 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
             { title: 'End-to-End Backend Automation', desc: 'Transforms software requirements into executable, tested, and validated backend applications with minimal developer intervention.' },
             { title: 'Extensible AI Software Engineering Platform', desc: 'Built to support future capabilities such as authentication generation, relationship modeling, deployment automation, documentation generation, Docker support, multi-database integration, and advanced workflow-based backend systems.' }
           ],
-          github: 'https://github.com/Rakshana24/APIForge'
+          github: 'https://github.com/Rakshana24/APIForge',
+          youtubeUrl: 'https://www.youtube.com/watch?v=prXdaXiVI_0'
         };
 
       case 'causal-debugger':
@@ -68,17 +70,17 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
           tagline: 'AI-Powered Runtime Error Analysis & Root Cause Detection Platform',
           status: 'Active',
           techStack: [
-            'Chrome Extension', 
-            'HTML', 
-            'CSS', 
-            'JavaScript', 
-            'FastAPI', 
-            'Python', 
-            'REST APIs', 
-            'Groq API', 
-            'LLM Reasoning', 
-            'Chrome Local Storage', 
-            'Render', 
+            'Chrome Extension',
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'FastAPI',
+            'Python',
+            'REST APIs',
+            'Groq API',
+            'LLM Reasoning',
+            'Chrome Local Storage',
+            'Render',
             'Error Correlation Engine'
           ],
           metrics: [
@@ -106,7 +108,8 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
             { title: 'Deployable AI Analysis Backend', desc: 'Cloud-hosted AI engine capable of processing debugging sessions from multiple developers.' },
             { title: 'Extensible Debugging Intelligence Layer', desc: 'Built to support future capabilities such as API contract validation, automated bug classification, replayable debugging sessions, and framework-aware error analysis.' }
           ],
-          github: 'https://github.com/Rakshana24/debugging-agent'
+          github: 'https://github.com/Rakshana24/debugging-agent',
+          youtubeUrl: 'https://www.youtube.com/watch?v=BzA92zLixSA'
         };
 
       case 'venuebook':
@@ -115,17 +118,17 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
           tagline: 'Smart College Venue Booking & Event Management Platform',
           status: 'Active',
           techStack: [
-            'React.js', 
-            'Vite', 
-            'JavaScript', 
-            'HTML5', 
-            'CSS3', 
-            'Node.js', 
-            'Express.js', 
-            'MySQL', 
-            'bcrypt.js', 
-            'Session Authentication', 
-            'REST APIs', 
+            'React.js',
+            'Vite',
+            'JavaScript',
+            'HTML5',
+            'CSS3',
+            'Node.js',
+            'Express.js',
+            'MySQL',
+            'bcrypt.js',
+            'Session Authentication',
+            'REST APIs',
             'Axios'
           ],
           metrics: [
@@ -153,7 +156,8 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
             { title: 'Event Planning Support', desc: 'Facilitates coordination of academic events, workshops, seminars, club activities, and institutional programs through organized venue management.' },
             { title: 'Scalable Institutional Resource Management', desc: 'Provides a scalable foundation that can be extended to support equipment booking, event notifications, automated scheduling, calendar integration, analytics dashboards, email notifications, and multi-campus venue management.' }
           ],
-          github: 'https://github.com/Rakshana24/VenueBooking'
+          github: 'https://github.com/Rakshana24/VenueBooking',
+          youtubeUrl: 'https://www.youtube.com/watch?v=WpjtYS4NyuQ'
         };
 
       default: // forestmind
@@ -162,22 +166,22 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
           tagline: 'AI-Powered Distributed Forest Monitoring & Protection System',
           status: 'Active',
           techStack: [
-            'React', 
-            'Vite', 
-            'React Router', 
-            'Context API', 
-            'Node.js', 
-            'Express.js', 
-            'REST APIs', 
-            'MongoDB Atlas', 
-            'Mongoose', 
-            'YOLOv8', 
-            'OpenCV', 
-            'CNN Audio Classification', 
-            'Edge AI', 
-            'Jetson Nano', 
-            'USB Camera & Mic', 
-            'Mesh Communication Network', 
+            'React',
+            'Vite',
+            'React Router',
+            'Context API',
+            'Node.js',
+            'Express.js',
+            'REST APIs',
+            'MongoDB Atlas',
+            'Mongoose',
+            'YOLOv8',
+            'OpenCV',
+            'CNN Audio Classification',
+            'Edge AI',
+            'Jetson Nano',
+            'USB Camera & Mic',
+            'Mesh Communication Network',
             'Dijkstra Routing'
           ],
           metrics: [
@@ -202,7 +206,8 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
             { title: 'Live Forest Office Alert Dashboard', desc: 'Displays active maps, live alerts, captured threat images, and location data for forest officers.' },
             { title: 'Environmental Insights & Forest Well-Being Recommendations', desc: 'Generates forest health insights and actionable recommendations from analytical models.' }
           ],
-          github: 'https://github.com/Rakshana24/ForestMind'
+          github: 'https://github.com/Rakshana24/ForestMind',
+          youtubeUrl: 'https://www.youtube.com/watch?v=YYYYYYYYYYY'
         };
     }
   };
@@ -211,7 +216,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
 
   return (
     <div className="space-y-8 select-text font-sans">
-      
+
       {/* 1. Hero Banner */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
@@ -220,7 +225,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
       >
         {/* Spotlighting */}
         <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-accent-blue/5 rounded-full blur-[80px] pointer-events-none" />
-        
+
         <div className="flex items-center justify-between flex-wrap gap-3">
           <div className="space-y-1.5">
             <div className="flex items-center space-x-2">
@@ -232,7 +237,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
                 <span>{project.status}</span>
               </span>
             </div>
-            
+
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-text-primary">
               {project.title.toUpperCase()}
             </h1>
@@ -251,6 +256,23 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
           ))}
         </div>
       </motion.div>
+
+      {/* Project Demo Section */}
+      {project.youtubeUrl && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="space-y-4"
+        >
+          <h3 className="text-xs font-mono uppercase tracking-wider text-text-muted pl-1 flex items-center space-x-2 select-none">
+            <span className="text-accent-blue font-bold">🎬</span>
+            <span>Project Demo</span>
+          </h3>
+          <CustomVideoPlayer videoUrl={project.youtubeUrl} projectName={project.title} />
+        </motion.div>
+      )}
 
       {/* 2. Key Metrics Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -278,7 +300,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
           <Layers className="w-4 h-4 text-accent-blue" />
           <span>System Flow & Architecture Pipeline</span>
         </h3>
-        
+
         <div className="border border-border-dark rounded-xl bg-card-dark/20 p-5 md:p-6 overflow-x-auto">
           <div className="flex items-center space-x-3 min-w-max py-2 px-1">
             {project.flow.map((node, index) => {
@@ -336,7 +358,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
           <h4 className="text-sm font-bold text-text-primary">Interested in looking at the source code?</h4>
           <p className="text-xs text-text-secondary">Inspect the agent codebases, docker configurations, and schemas on GitHub.</p>
         </div>
-        
+
         <a
           href={project.github}
           target="_blank"
@@ -344,7 +366,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ projectName 
           className="flex items-center space-x-2 px-5 py-2.5 bg-text-primary hover:bg-white text-bg-dark rounded-xl text-sm font-semibold shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
         >
           <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
           </svg>
           <span>View GitHub Repository</span>
         </a>
